@@ -1,0 +1,13 @@
+{
+  "build": "Termius 10.2.1 Windows x64",
+  "files": {
+    "Termius.exe": {
+      "size_bytes": 238428256,
+      "sha256": "3694aee937f4b6d66b7a43921a5ec492f8d8b84b5afdcc1d54e3d343e2d97b82"
+    },
+    "app.asar": {
+      "size_bytes": 166617652,
+      "sha256": "dc2f4bf69399bf0093f50143702e9760073d1df53b5bf795a6d6849741d0f08c"
+    }
+  }
+}

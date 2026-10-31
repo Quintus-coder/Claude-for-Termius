@@ -1,0 +1,55 @@
+{
+  "name": "Claude for Termius",
+  "variants": {
+    "Light": {
+      "palette": [
+        "141413",
+        "ad3837",
+        "526c3d",
+        "886518",
+        "386c99",
+        "785d98",
+        "286e6b",
+        "706f68",
+        "878580",
+        "b85b3d",
+        "5e783f",
+        "916b12",
+        "497dab",
+        "8a67a2",
+        "35817b",
+        "141413"
+      ],
+      "background": "faf9f5",
+      "cursor": "d97757",
+      "foreground": "141413",
+      "selection": "d9775738",
+      "ui": "878580"
+    },
+    "Dark": {
+      "palette": [
+        "141413",
+        "e1847c",
+        "a1b780",
+        "ddba77",
+        "8eb5dc",
+        "b6a2cb",
+        "8ec0b5",
+        "e8e6dc",
+        "8b8980",
+        "f2aa8e",
+        "bdd399",
+        "f0d297",
+        "b6d0eb",
+        "d0b8e0",
+        "add9cb",
+        "faf9f5"
+      ],
+      "background": "262624",
+      "cursor": "d97757",
+      "foreground": "faf9f5",
+      "selection": "d9775759",
+      "ui": "a4a198"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+校验日期：2026-10-20 UTC
+样本：Termius 10.2.1 Windows x64 官方安装文件副本。
+样本 SHA256 和大小见 verified-build.json。
+
+通过：6 项 Node.js 自动检查。
+1. 四个真实 JS 模块都替换为 Claude Light/Dark；其他打包文件保持一致。
+2. 全部打包文件的 SHA256 与分块校验相符。
+3. EXE 只修改嵌入的完整性资源及 PE checksum；Electron fuses 保持原样。
+4. 校验记录不匹配时拒绝修改。
+5. 重复安装不叠加；还原的 ASAR 和 EXE 与原版逐字节一致；更新后拒绝旧备份覆盖。
+6. 模拟 Windows EXE 写入锁时，将已修改的第一个文件还原。
+
+通过：四个修改后 JS 模块的语法检查。
+通过：PowerShell 启动器语法解析（PowerShell 7.6.7）。
+通过：原版、已修改版、更新版三种运行库选择行为测试（PowerShell 7.6.7）。
+通过：独立只读代码审查，已修复升级后可能混用运行库的问题，无未解决的严重或重要问题。
+
+未执行：Windows 图形界面启动、Windows PowerShell 5.1 实机运行及真实 Windows 文件锁。
+preview.png 仅为配色设计示意。
+
+补丁会使发行商原始数字签名不再匹配；安装前请阅读 README.md。
